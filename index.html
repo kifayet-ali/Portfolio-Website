@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kifayet Ali Ghaous - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            // Initialize EmailJS with your Public Key
+            emailjs.init("EBiKlLOvhZwGrLuyi"); // Replace with your actual public key from EmailJS
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Kifayet</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Let's Talk</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-container">
+            <div class="home-content">
+                <div class="home-text">
+                    <h3 class="greeting">Hello, I'm</h3>
+                    <h1 class="name">Kifayat Ali Ghaous</h1>
+                    <h2 class="title">Computer Science Student</h2>
+                    <p class="description">
+                        Passionate 3rd semester CS student exploring the world of programming,
+                        databases, and software engineering. Building tomorrow's solutions today.
+                    </p>
+                    <div class="home-buttons">
+                        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/kifayet-ali" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kifayet-ali-2024cs415/" class="social-link"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://web.facebook.com/kifayet.ali.2025" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/kifayetali070/" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="home-image">
+                    <div class="image-container">
+                        <div class="floating-elements">
+                            <div class="floating-element" data-speed="2">💻</div>
+                            <div class="floating-element" data-speed="3">🚀</div>
+                            <div class="floating-element" data-speed="1.5">⚡</div>
+                        </div>
+
+                        <img src="photos\photo2.png" alt="Kifayet Ali Ghaous" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>I'm Kifayet Ali Ghaous</h3>
+                    <p>
+                        A dedicated Computer Science student in my 3rd semester, passionate about
+                        technology and innovation. I'm constantly learning and exploring new
+                        programming concepts, from fundamental programming to advanced database
+                        management systems.
+                    </p>
+                    <p>
+                        My journey in computer science has equipped me with strong analytical
+                        thinking and problem-solving skills. I enjoy tackling complex challenges
+                        and turning ideas into functional solutions.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>3rd</h4>
+                            <p>Semester</p>
+                        </div>
+                        <div class="stat">
+                            <h4>7+</h4>
+                            <p>Core Skills</p>
+                        </div>
+                        <div class="stat">
+                            <h4>∞</h4>
+                            <p>Learning</p>
+                        </div>
+                    </div>
+                    <button class="portfolio-btn download-btn"
+                                onclick="downloadDocumentation('Kifayat Ali Resume.pdf')">
+                                <i class="fas fa-download"></i>
+                                <span>Resume</span>
+                            </button>
+                </div>
+                <div class="about-image">
+                    <div class="about-img-container">
+                        <img src="photos\photo1.png" alt="About Kifayet">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="Programming Fundamentals">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming Fundamentals</h3>
+                    <p>Strong foundation in programming concepts, algorithms, and problem-solving techniques.</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="85%">
+                            <span class="progress-text">85%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-skill="Object-Oriented Programming">
+                    <div class="skill-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>Object-Oriented Programming</h3>
+                    <p>Proficient in OOP concepts including inheritance, polymorphism, and encapsulation.</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="80%">
+                            <span class="progress-text">80%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-skill="Database Management">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>DBMS & RDBMS</h3>
+                    <p>Skilled in database design, developing optimized SQL queries, and maintaining relational
+                        databases.</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="75%">
+                            <span class="progress-text">75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-skill="Software Engineering">
+                    <div class="skill-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Software Engineering</h3>
+                    <p>Understanding of software development lifecycle and engineering principles.</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="70%">
+                            <span class="progress-text">70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-skill="Computer Networks">
+                    <div class="skill-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Computer Networks</h3>
+                    <p>Knowledge of networking concepts, protocols, and network architecture.</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="65%">
+                            <span class="progress-text">65%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-skill="Data Structures & Algorithms">
+                    <div class="skill-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Data Structures & Algorithms</h3>
+                    <p>Solid understanding of DSA concepts for efficient problem-solving and optimization.</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="78%">
+                            <span class="progress-text">78%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-skill="Frontend Development">
+                    <div class="skill-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>Creating responsive and interactive user interfaces using HTML, CSS, and JavaScript.</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="72%">
+                            <span class="progress-text">72%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-skill="Socket Programming">
+                    <div class="skill-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Socket Programming</h3>
+                    <p>Network programming with sockets for real-time communication and data transfer.</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="68%">
+                            <span class="progress-text">68%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Services</h2>
+                <p class="section-subtitle">What I can help you with</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Programming Solutions</h3>
+                    <p>Custom programming solutions using various languages and frameworks for your specific needs.</p>
+                    <ul class="service-list">
+                        <li>Algorithm Development</li>
+                        <li>Code Optimization</li>
+                        <li>Problem Solving</li>
+                        <li>Code Review & Debugging</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Design</h3>
+                    <p>Efficient database design and management solutions for your data storage needs.</p>
+                    <ul class="service-list">
+                        <li>Database Architecture</li>
+                        <li>SQL Query Optimization</li>
+                        <li>Data Modeling</li>
+                        <li>Performance Tuning</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Academic Support</h3>
+                    <p>Tutoring and assistance in computer science subjects and programming concepts.</p>
+                    <ul class="service-list">
+                        <li>Programming Tutoring</li>
+                        <li>Assignment Help</li>
+                        <li>Concept Explanation</li>
+                        <li>Exam Preparation</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Modern and responsive web applications built with latest technologies and best practices.</p>
+                    <ul class="service-list">
+                        <li>Responsive Web Design</li>
+                        <li>Frontend Development</li>
+                        <li>Interactive User Interfaces</li>
+                        <li>Website Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Portfolio</h2>
+                <p class="section-subtitle">Showcasing my recent projects and work</p>
+            </div>
+
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="programming web">
+                    <div class="portfolio-image">
+                        <img src="photos\BankSystem.png" alt="Bank Management System">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-badge">
+                                <span class="badge programming">Programming</span>
+                                <span class="badge academic">Academic</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Bank Management System</h3>
+                        <p class="portfolio-description">
+                            The Bank Management System is a console-based application developed in C++ that simulates
+                            the core functionalities of a banking system. It allows users to create accounts, log in
+                            securely, deposit and withdraw money, transfer funds, view transaction history, and apply
+                            for loans.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">File handling</span>
+                        </div>
+                        <div class="portfolio-stats">
+                            <div class="stat">
+                                <i class="fas fa-code"></i>
+                                <span>500+ Lines</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-calendar"></i>
+                                <span>Dec 2024</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-actions">
+                            <a href="https://github.com/kifayet-ali/bank-management-system"
+                                class="portfolio-btn github-btn" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                            <button class="portfolio-btn download-btn"
+                                onclick="downloadDocumentation('BankSystemDocumentation.pdf')">
+                                <i class="fas fa-download"></i>
+                                <span>Documentation</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="database academic">
+                    <div class="portfolio-image">
+                        <img src="photos\CourseWebsite.png" alt="Courses-Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-badge">
+                                <span class="badge web">Web Dev</span>
+                                <span class="badge academic">Academic</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Student Management System</h3>
+                        <p class="portfolio-description">
+                            The Courses Website is a web-based application developed using HTML and CSS that presents
+                            educational content in a clean and user-friendly layout. It allows users to explore
+                            available courses, view instructor details, and navigate different sections easily.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <a href="https://kifayet-ali.github.io/Courses-Website/index.html" class="demo-btn"
+                                target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>LIVE DEMO</span>
+                            </a>
+                        </div>
+                        <div class="portfolio-stats">
+                            <div class="stat">
+                                <i class="fas fa-database"></i>
+                                <span>6+ webpages</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-calendar"></i>
+                                <span>Dec 2024</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-actions">
+                            <a href="https://github.com/kifayet-ali/Courses-Website" class="portfolio-btn github-btn"
+                                target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                            <button class="portfolio-btn download-btn"
+                                onclick="downloadDocumentation('AICT-Website.pdf')">
+                                <i class="fas fa-download"></i>
+                                <span>Documentation</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="programming academic">
+                    <div class="portfolio-image">
+                        <img src="photos\RailwaySystem.png" alt="Railway System">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-badge">
+                                <span class="badge programming">Programming</span>
+                                <span class="badge academic">Academic</span>
+                                <span class="badge database">Database</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Railway Reservation Management System (RRMS)</h3>
+                        <p class="portfolio-description">
+                            This project is a Railway Reservation Management System built using C# Windows Forms
+                            and Oracle Database. It applies core OOP principles like encapsulation, inheritance,
+                            polymorphism, and abstraction to design modular and scalable forms.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">OOP</span>
+                            <span class="tech-tag">RDBMS</span>
+                            <span class="tech-tag">ORACLE</span>
+                        </div>
+                        <div class="portfolio-stats">
+                            <div class="stat">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>6+ Forms</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-calendar"></i>
+                                <span>MAY 2025</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-actions">
+                            <a href="https://github.com/kifayet-ali/Railway-Management-System"
+                                class="portfolio-btn github-btn" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                            <button class="portfolio-btn download-btn"
+                                onclick="downloadDocumentation('OOP & DBMS.pdf')">
+                                <i class="fas fa-download"></i>
+                                <span>Documentation</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="web programming">
+                    <div class="portfolio-image">
+                        <img src="photos\Huffman.png" alt="HuffMann Tree">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-badge">
+                                <span class="badge web">Web Dev</span>
+                                <span class="badge programming">Programming</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Huffman Coding Based Text Compression Tool</h3>
+                        <p class="portfolio-description">
+                            This project implements a Huffman Coding–Based Text Compression Tool. It
+                            dynamically builds a binary Huffman tree based on character frequencies to generate optimal
+                            variable-length codes for lossless compression.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JS</span>
+                            <span class="tech-tag">DSA</span>
+                            <a href="https://kifayet-ali.github.io/Huffman-tree/" class="demo-btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>LIVE DEMO</span>
+                            </a>
+                        </div>
+                        <div class="portfolio-stats">
+                            <div class="stat">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Algorithms</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-calendar"></i>
+                                <span>Dec 2025</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-actions">
+                            <a href="https://github.com/kifayet-ali/Huffman-tree" class="portfolio-btn github-btn"
+                                target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                            <button class="portfolio-btn download-btn"
+                                onclick="downloadDocumentation('HuffMan Compression.pdf')">
+                                <i class="fas fa-download"></i>
+                                <span>Documentation</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item" data-category="database programming">
+                    <div class="portfolio-image">
+                        <img src="photos\CN01.png" alt="Enterprise Network">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-badge">
+                                <span class="badge programming">Cisco Packet Tracer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Design and Implementation of an Enterprise Network</h3>
+                        <p class="portfolio-description">
+                            Enterprise Network Design & Implementation – A scalable, secure, and fully redundant
+                            corporate network designed in Cisco Packet Tracer for a 3‑floor building with 600+ users.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Subnetting</span>
+                            <span class="tech-tag">DHCP</span>
+                            <span class="tech-tag">OSPF</span>
+                            <span class="tech-tag">Cisco Packet Tracer</span>
+                        </div>
+                        <div class="portfolio-stats">
+                            <div class="stat">
+                                <i class="fas fa-book"></i>
+                                <span>Enterprise Network</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-calendar"></i>
+                                <span>Dec 2025</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-actions">
+                            <a href="https://github.com/kifayet-ali/Enterprise-Network" class="portfolio-btn github-btn"
+                                target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                            <button class="portfolio-btn download-btn"
+                                onclick="downloadDocumentation('computer network 01.pdf')">
+                                <i class="fas fa-download"></i>
+                                <span>Documentation</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item" data-category="web programming">
+                    <div class="portfolio-image">
+                        <img src="photos\chatapp.png" alt="Real-time Chat App">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-badge">
+                                <span class="badge web">Python Dev</span>
+                                <span class="badge programming">Programming</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Real-time Chat Application</h3>
+                        <p class="portfolio-description">
+                            This is a Python-based real-time web chat application. It uses Flask for the backend server
+                            and Socket.io for live messaging functionality. The project includes user authentication and
+                            a clean template structure.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">JS</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Real-time</span>
+                        </div>
+                        <div class="portfolio-stats">
+                            <div class="stat">
+                                <i class="fas fa-comments"></i>
+                                <span>Real-time</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-calendar"></i>
+                                <span>Jan 2026</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-actions">
+                            <a href="https://github.com/kifayet-ali/python-chat-app" class="portfolio-btn github-btn"
+                                target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                            <button class="portfolio-btn download-btn" onclick="downloadDocumentation('chatapp.pdf')">
+                                <i class="fas fa-download"></i>
+                                <span>Documentation</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="portfolio-item" data-category="academic programming">
+                    <div class="portfolio-image">
+                        <img src="photos/monitoringsystem.png" alt="Parent Monitoring System">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-badge">
+                                <span class="badge academic">VIBE</span>
+                                <span class="badge programming">Programming</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Parent Monitoring System</h3>
+                        <p class="portfolio-description">
+                            A shorter one
+                            The Parent Monitoring System is a dual-application tool that helps parents oversee their
+                            child's device use. It includes a child-side tracker that captures screen activity and
+                            enforces usage limits, and a parent dashboard that displays real-time data, screenshots, and
+                            settings. Built with Flask and JavaScript, it offers secure, configurable supervision
+                            through a simple web interface.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Ngrok</span>
+                            <span class="tech-tag">JS</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                        <div class="portfolio-stats">
+                            <div class="stat">
+                                <i class="fas fa-robot"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-calendar"></i>
+                                <span>Jan 2026</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-actions">
+                            <a href="https://github.com/kifayet-ali/Parent-Monitoring-System" class="portfolio-btn github-btn"
+                                target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                            <button class="portfolio-btn download-btn"
+                                onclick="downloadDocumentation('monitoring System.pdf')">
+                                <i class="fas fa-download"></i>
+                                <span>Documentation</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Summary -->
+            <div class="portfolio-summary">
+                <div class="summary-stats">
+                    <div class="summary-item">
+                        <span class="summary-number">7</span>
+                        <span class="summary-label">Total Projects</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">5</span>
+                        <span class="summary-label">Technologies</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">100%</span>
+                        <span class="summary-label">Completion Rate</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">6</span>
+                        <span class="summary-label">Months Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Talk</h2>
+                <p class="section-subtitle">Get in touch with me</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <h3>Let's discuss your project</h3>
+                        <p>I'm always interested in new opportunities and collaborations. Whether you need help with
+                            programming, database design, or web development, feel free to reach out!</p>
+                    </div>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>dev.kifayet.ali@gmail.com</p>
+                                <a href="mailto:dev.kifayet.ali@gmail.com" class="contact-link">Send Email</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+92 329 6944585</p>
+                                <a href="tel:+923296944585" class="contact-link">Call Now</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Pakistan</p>
+                                <span class="contact-link">Available for Remote Work</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Response Time</h4>
+                                <p>Within 24 hours</p>
+                                <span class="contact-link">Quick Response Guaranteed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-contact">
+                        <h4>Follow Me</h4>
+                        <div class="social-links-contact">
+                            <a href="https://github.com/kifayet-ali" class="social-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kifayet-ali-2024cs415/" class="social-link" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://web.facebook.com/kifayet.ali.2025" class="social-link" title="Twitter">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/kifayetali070/" class="social-link" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h3>Send me a message</h3>
+                        <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+                    </div>
+
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                                <span class="form-icon"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                <span class="form-icon"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+                                <span class="form-icon"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="programming">Programming Solutions</option>
+                                    <option value="database">Database Design</option>
+                                    <option value="web-development">Web Development</option>
+                                    <option value="academic">Academic Support</option>
+                                    <option value="collaboration">Collaboration</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="form-icon"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"
+                                placeholder="Tell me about your project or how I can help you..." rows="6"
+                                required></textarea>
+                            <span class="form-icon textarea-icon"></span>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-icon"></span>
+                            </button>
+                            <button type="reset" class="btn btn-secondary reset-btn">
+                                <span class="btn-text">Clear Form</span>
+                                <span class="btn-icon"></span>
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="form-success" id="form-success">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h4>Message Sent Successfully!</h4>
+                        <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+                    </div>
+
+                    <div class="form-error" id="form-error">
+                        <div class="error-icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <h4>Oops! Something went wrong</h4>
+                        <p id="error-message">Please try again or contact me directly at dev.kifayet.ali@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <span class="logo-text">Kifayet</span>
+                        </div>
+                        <p class="footer-description">
+                            Passionate Computer Science student dedicated to creating innovative solutions
+                            and building the future through technology.
+                        </p>
+                        <div class="footer-social">
+                            <a href="https://github.com/kifayet-ali" class="social-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kifayet-ali-2024cs415/" class="social-link" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://web.facebook.com/kifayet.ali.2025" class="social-link" title="Twitter">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/kifayetali070/" class="social-link" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About Me</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Services</h4>
+                            <ul>
+                                <li><a href="#services">Programming Solutions</a></li>
+                                <li><a href="#services">Database Design</a></li>
+                                <li><a href="#services">Web Development</a></li>
+                                <li><a href="#services">Academic Support</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Contact Info</h4>
+                            <ul class="contact-info-list">
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:dev.kifayet.ali@gmail.com">dev.kifayet.ali@gmail.com</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    <a href="tel:+923296944585">+92 329 6944585</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Pakistan</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-clock"></i>
+                                    <span>Available 24/7</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Let's Connect</h4>
+                            <p class="connect-text">
+                                Ready to start your next project? Let's discuss how I can help bring your ideas to life.
+                            </p>
+                            <a href="#contact" class="footer-cta-btn">
+                                <span>Get In Touch</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="footer-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">24h</span>
+                                    <span class="stat-label">Response Time</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">100%</span>
+                                    <span class="stat-label">Satisfaction</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <div class="copyright">
+                            <p>&copy; 2026 Kifayet Ali Ghaous. All rights reserved.</p>
+                            <p class="made-with">Made with <i class="fas fa-heart"></i> and lots of <i
+                                    class="fas fa-coffee"></i></p>
+                        </div>
+
+                        <div class="footer-bottom-links">
+                            <a href="#" class="footer-link">Privacy Policy</a>
+                            <a href="#" class="footer-link">Terms of Service</a>
+                            <a href="#" class="footer-link">Sitemap</a>
+                        </div>
+
+                        <div class="back-to-top">
+                            <button id="backToTop" class="back-to-top-btn" title="Back to Top">
+                                <i class="fas fa-chevron-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-floating-elements">
+            <div class="floating-element" data-speed="1">💻</div>
+            <div class="floating-element" data-speed="2">🚀</div>
+            <div class="floating-element" data-speed="1.5">⚡</div>
+            <div class="floating-element" data-speed="0.8">🎯</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
